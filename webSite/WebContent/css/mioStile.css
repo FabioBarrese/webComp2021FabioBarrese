@@ -1,0 +1,49 @@
+#sottolineato{
+   text-decoration-line: underline;
+}
+#sfondoColorato{
+   background-color:#e7e7e7;
+   color:#212529;
+}
+var{
+	color:#3a00d5;
+}
+#parolaChiave{
+	color:#950055;
+}
+#fusione{
+	background-color:#e7e7e7;
+	color:#950055;
+}
+#variabile{
+	color:#3a00d5;
+}
+#fusioneV{
+	background-color:#e7e7e7;
+	color:#3a00d5;
+}
+#commento{
+	color:#3f7f5f;
+}
+#linColorato{
+	width: 60%;
+    background-color:#000000;
+	color:#feff00;
+}
+/*contenitore responsive*/
+.contenitore {
+    position: relative;
+  	overflow: hidden;
+  	width: 100%;
+  	padding-top: 56.25%;
+}
+/*iframe che si adegua al contenitore responsive*/
+.responsive-iframe{
+    position: absolute;
+  	top: 0;
+  	left: 0;
+  	bottom: 0;
+  	right: 0;
+  	width: 100%;
+  	height: 100%;
+}

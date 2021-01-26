@@ -1,0 +1,21 @@
+HOSTNAME : database-1.clvnyaziusxb.us-east-2.rds.amazonaws.com
+USERNAME : admin
+PASSWORD : webcomputing
+PORTA : 3306
+
+
+SCRIPT USATO PER CREARE IL DATABASE:
+
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS 'mydb'
+USE mydb ;
+
+-- -----------------------------------------------------
+-- TABELLA utente
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS 'utente' (
+  'nome' VARCHAR(55) NOT NULL,
+  'chiave' VARCHAR(45) NOT NULL,
+  PRIMARY KEY ('nome'))

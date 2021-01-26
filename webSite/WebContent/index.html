@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Pensiero tecnologico</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="p5.min.js"></script>
+  <script src="p5.dom.min.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <script src="sketch.js"></script>
+  <script src="particella.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#contatto">Contattami</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="presentazione.html" id="pulsChi" target="_blank">CHI</a></li>
+        <li><a href="presentazione.html" id="pulsCosa" target="_blank">COSA</a></li>
+        <li><a href="#doveContattarmi">DOVE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Chi sono?</h3>
+  <img src="media/immTrasparente.png" id="fabioId" class="img-responsive img-circle margin" style="display:inline" alt="Fabio" width="350" height="350">
+  <h3>Sono uno sviluppatore software</h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">Cosa imparerai su questo sito?</h3>
+  <p>Questo sito è nato con lo scopo di trasmettere al lettore le competenze di base per sviluppare videogiochi 2D e per rendere il proprio sito web interattivo; saranno quindi presenti diversi articoli riguardanti i linguaggi di programmazione Java e JavaScript.
+  Lo sviluppo di videogiochi si baserà sul framework <b>libGDX</b> mentre la programmazione web lato client si baserà sull'utilizzo del framework <b>p5.js</b>. </p>
+  <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </a>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin" id="doveContattarmi">Dove puoi trovarmi?</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Unisciti alla mia pagina facebook <b>corsi online per programmatori Java</b> per essere costantemente aggiornato sulle ultime novità e per condividere le tue domande e le tue idee. </p>
+      <a href="https://www.facebook.com/JavaCorsiOnline/" target="_blank">
+         <img src="media/bambino.jpg" class="img-responsive margin" style="width:100%" alt="immagine non trovata">
+      </a>
+    </div>
+    <div class="col-sm-4"> 
+      <p>Ho creato diversi videocorsi sulla piattaforma Udemy, sia in inglese che in italiano. Se vuoi approfondire gli argomenti trattati in questo sito vai <a href="#">qui</a> e scegli quello a cui sei maggiormente interessato/a.</p>
+      <a href="https://www.udemy.com/user/fabio-barrese-2/" target="_blank">
+         <img src="media/connessione.jpg" class="img-responsive margin" style="width:100%" alt="immagine non trovata">
+      </a>
+    </div>
+    <div class="col-sm-4"> 
+      <p>Ho un canale youtube dove pubblico costantemente i mie progetti in corso e tanto altro. 
+      Lo scopo del canale è quello di creare una comunità di sviluppatori in cui ognuno può far sentire la propria voce e in cui ognuno pò aiutare ed essere aiutato.
+      D'altronde è risaputo che <b>l'unione fa la forza</b>. </p>
+      <a href="https://www.youtube.com/channel/UCvRjgX3ZEoC3WwTBVKKnwUg/featured" target="_blank">
+         <img src="media/unione.jpg" class="img-responsive margin" style="width:100%" alt="immagine non trovata">
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Email :     <a id="contatto" href="#contatto" style="color: #ffffff">fabiobarrese1996@gmail.com</a></p> 
+</footer>
+
+</body>
+</html>
+
