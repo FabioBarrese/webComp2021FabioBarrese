@@ -21,7 +21,7 @@ public class Iscrizione extends HttpServlet {
 		super();
 	}
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String userName = request.getParameter("uname");
 		String password = request.getParameter("psw");

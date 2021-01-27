@@ -13,7 +13,7 @@
 			response.sendRedirect("articolo1.jsp");
 		}
 	%>
-	<form action="Iscrizione" method="get">
+	<form action="Iscrizione" method="post">
 		<div class="imgcontainer">
 			<img src="media/img_avatar.png" alt="Avatar" class="avatar">
 		</div>
